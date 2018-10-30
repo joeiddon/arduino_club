@@ -1,16 +1,3 @@
-/*
-remember to link the grounds between
-the arduino and the motor driver
-
-the motors can handle up to ~6V, but must
-be about ~6.5V to regulate for 5V, so will
-just rely on the PWM to not over work them
-
-some links:
-https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf  (for the datasheet)
-https://www.teachmemicro.com/use-l298n-motor-driver/  (for the breakout)
-*/
-
 #define ENA 5
 #define ENB 10
 #define IN1 6
@@ -25,7 +12,7 @@ void setup() {
     pinMode(IN1, OUTPUT);
     pinMode(IN2, OUTPUT);
     pinMode(IN3, OUTPUT);
-    pinMode(IN4, OUTPUT);
+    pinMode(IN4, OUTPUT);    
 }
 
 void loop() {
